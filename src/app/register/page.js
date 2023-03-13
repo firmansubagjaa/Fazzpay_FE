@@ -25,7 +25,7 @@ export default function Register() {
   const handleRegister = (event) => {
     event.preventDefault();
     const data = new URLSearchParams(RegisterForm)
-    axios.post("http://localhost:5000/api/v1/auth/register-user/", data).then((res) => {
+    axios.post("https://vast-red-clam-suit.cyclic.app/api/v1/auth/register-user/", data).then((res) => {
       console.log(res.data.data);;
       router.push('/login');
     }).catch((err) => {
