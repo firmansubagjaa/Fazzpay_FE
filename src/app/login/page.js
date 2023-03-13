@@ -35,7 +35,7 @@ export default function Login() {
     if (localStorage.getItem('@userLogin')) {
       router.push('/dashboard')
     }
-  }, [])
+  }, [router])
 
   return (
     <>
