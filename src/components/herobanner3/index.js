@@ -1,6 +1,3 @@
-import Phone1 from "../../assets/images/svg/phone1.svg";
-import Phone2 from "../../assets/images/svg/phone2.svg";
-// import herobanner from "@/"
 import Image from "next/image";
 
 const HeroBanner3 = () => {

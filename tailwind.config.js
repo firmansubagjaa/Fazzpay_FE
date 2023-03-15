@@ -18,7 +18,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'hero-pattern': "url(../../src/assets/images/svg/heroBanner2.svg)",
+        'hero-pattern': "url(../../src/assets/images/svg/heroBanner1.svg)",
         'hero-login': "url(../../src/assets/images/svg/herologin.svg)",
         'dashboard': "url(../../src/assets/images/png/users/dashboard.png"
       }
