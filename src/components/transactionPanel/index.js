@@ -1,6 +1,4 @@
 import Image from "next/image";
-import user1 from '@/assets/images/png/users/user2.png'
-
 
 const TransactionPanel = () => {
   return (
@@ -16,7 +14,7 @@ const TransactionPanel = () => {
               <>
                 <div className='flex justify-between mt-10'>
                   <div className='flex'>
-                    <Image src={user1} alt='user' />
+                    <Image src={require('@/assets/images/png/users/user2.png')} alt='user' />
                     <div className='ml-3 pt-2'>
                       <p className="font-semibold pr-10">Firman Subagja</p>
                       <p className="font-normal">Accept</p>

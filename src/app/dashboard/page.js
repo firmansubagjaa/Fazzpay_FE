@@ -1,21 +1,13 @@
 "use client";
 import React from 'react'
 import { useRouter } from 'next/navigation';
-import { useEffect } from 'react';
 import Auth from '@/components/auth'
-import Dashboard from '@/components/dashboard'
 import MoneyInfo from '@/components/moneyInfo'
 import GraphPanel from '@/components/graphPanel'
 import TransactionPanel from '@/components/transactionPanel'
 import Footer2 from '@/components/footer2'
 
 //import
-import ActiveGrid from '@/assets/images/svg/activegrid.svg'
-import Transfer from '@/assets/images/svg/arrow-up.svg'
-import Plus from '@/assets/images/svg/plus.svg'
-import User from '@/assets/images/svg/user.svg'
-import Logout from '@/assets/images/svg/log-out.svg'
-
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -30,17 +22,17 @@ export default function Home(setIsLogin) {
             <div className="flex flex-col justify-between h-full">
               <ul className="menu bg-base-100 mb-10 w-64">
                 <li className='bordered'><Link href='/dashboard'>
-                  <Image src={ActiveGrid} />
+                  <Image src={require('@/assets/images/svg/activegrid.svg')} alt='' />
                   Home</Link>
                 </li>
                 <li><Link href='/dashboard/transfer'>
-                  <Image src={Transfer} />
+                  <Image src={require('@/assets/images/svg/arrow-up.svg')} alt='' />
                   Transfer</Link></li>
                 <li><label htmlFor="my-modal-3">
-                  <Image src={Plus} />
+                  <Image src={require('@/assets/images/svg/plus.svg')} alt='' />
                   Top Up</label></li>
                 <li><Link href='/dashboard/profile'>
-                  <Image src={User} />
+                  <Image src={require('@/assets/images/svg/user.svg')} alt='' />
                   Profile</Link></li>
               </ul>
               <ul className="menu">
@@ -48,7 +40,7 @@ export default function Home(setIsLogin) {
                   localStorage.removeItem("@userLogin");
                   router.push('/')
                 }}>
-                  <Image src={Logout} />
+                  <Image src={require('@/assets/images/svg/log-out.svg')} alt='' />
                   Logout</a></li>
               </ul>
             </div>

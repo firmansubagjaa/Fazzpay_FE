@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import React from 'react'
-import user1 from '@/assets/images/png/users/user2.png'
 
 export default function TransactionDetail() {
   return (
@@ -23,7 +22,7 @@ export default function TransactionDetail() {
               <>
                 <div className='flex justify-between mt-10'>
                   <div className='flex'>
-                    <Image src={user1} alt='user' />
+                    <Image src={require('@/assets/images/png/users/user2.png')} alt='user' />
                     <div className='ml-3 pt-2'>
                       <p>Firman Subagja</p>
                       <p>Accept</p>

@@ -1,8 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import user1 from '@/assets/images/png/users/user2.png'
 import Link from 'next/link'
-
 
 export default function TransfersComponent() {
   return (
@@ -31,7 +29,7 @@ export default function TransfersComponent() {
                   <div className="card w-full shadow-md">
                     <div className='flex justify-between py-3 px-2'>
                       <div className='flex'>
-                        <Image src={user1} alt='user' />
+                        <Image src={require('@/assets/images/png/users/user2.png')} alt='user' />
                         <div className='ml-3 pt-2'>
                           <p>Firman Subagja</p>
                           <p>Accept</p>

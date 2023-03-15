@@ -1,8 +1,6 @@
 import Image from "next/image";
-import user1 from '@/assets/images/png/users/user1.png'
 import React from 'react'
 import Link from "next/link";
-import arrow from '@/assets/images/svg/arrow-left.svg'
 
 export default function ProfileComponent() {
   return (
@@ -10,7 +8,7 @@ export default function ProfileComponent() {
       <div className="card w-full bg-base-100 shadow-md">
         <div className="card-body">
           <div className="flex items-center flex-col leading-loose justify-center">
-            <Image src={user1} />
+            <Image src={require('@/assets/images/png/users/user1.png')} alt='user' />
             <Link href=''>
               <span className="text-slate-400 ">
                 Edit
@@ -24,24 +22,24 @@ export default function ProfileComponent() {
               <Link href='/dashboard/profile/'>
                 <button className="btn btn-block h-14 my-5">
                   <p>Personal Information</p>
-                  <Image src={arrow} />
+                  <Image src={require('@/assets/images/svg/arrow-left.svg')} alt='' />
                 </button>
               </Link>
               <Link href=''>
                 <button className="btn btn-block h-14">
                   <p>Change Password</p>
-                  <Image src={arrow} />
+                  <Image src={require('@/assets/images/svg/arrow-left.svg')} alt='' />
                 </button>
               </Link>
               <Link href=''>
                 <button className="btn btn-block h-14 my-5">
                   <p>Change PIN</p>
-                  <Image src={arrow} />
+                  <Image src={require('@/assets/images/svg/arrow-left.svg')} alt='' />
                 </button>
               </Link>
               <label htmlFor="my-modal-6" className="btn btn-block h-14">
                 <p>Log Out</p>
-                <Image src={arrow} />
+                <Image src={require('@/assets/images/svg/arrow-left.svg')} alt='' />
               </label>
               {/* The button to open modal */}
             </div>

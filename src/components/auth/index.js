@@ -1,14 +1,12 @@
-"use client";
+
 import Image from "next/image";
-import User from '@/assets/images/png/users/user1.png'
 import React from 'react'
-import Link from "next/link";
-import axios from "axios";
+// import Link from "next/link";
+// import axios from "axios";
 
 export default function Auth() {
   return (
     <>
-
       <div className="navbar bg-base-100 py-5 shadow-md">
         <div className="container">
           <div className="flex-1">
@@ -21,18 +19,20 @@ export default function Auth() {
               <div className="flex">
                 <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                   <div className="w-10 rounded-full">
-                    <Image src={User} />
+                    <Image src={require('@/assets/images/png/users/user1.png')} alt='' />
                   </div>
                 </label>
                 <div className="mx-2 text-sm">
-                  {localStorage.getItem("@userLogin") ?
+                  {/* {localStorage.getItem("@userLogin") ?
                     <span>{JSON.parse(localStorage.getItem("@userLogin")).firstname} {JSON.parse(localStorage.getItem("@userLogin")).lastname}</span>
                     : <span>anonim</span>
                   }<br />
                   {localStorage.getItem("@userLogin") ?
                     <span>{JSON.parse(localStorage.getItem("@userLogin")).phone}</span>
                     : <span> - </span>
-                  }
+                  } */}
+                  <span>Test</span>
+                  <span>008999999999</span>
                 </div>
               </div>
               <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">

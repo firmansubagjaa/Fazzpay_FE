@@ -1,8 +1,3 @@
-import ActiveGrid from '@/assets/images/svg/activegrid.svg'
-import Transfer from '@/assets/images/svg/arrow-up.svg'
-import Plus from '@/assets/images/svg/plus.svg'
-import User from '@/assets/images/svg/user.svg'
-import Logout from '@/assets/images/svg/log-out.svg'
 import Image from 'next/image';
 import Link from 'next/link'
 Image
@@ -14,22 +9,22 @@ const Dashboard = () => {
         <div className="flex flex-col justify-between h-full">
           <ul className="menu bg-base-100 mb-10 w-64">
             <li className="hover-bordered"><Link href='/dashboard'>
-              <Image src={ActiveGrid} />
+              <Image src={'@/assets/images/svg/activegrid.svg'} alt='' />
               Home</Link>
             </li>
             <li className="hover-bordered"><Link href='/transfer'>
-              <Image src={Transfer} />
+              <Image src={require('@/assets/images/svg/arrow-up.svg')} alt='' />
               Transfer</Link></li>
             <li><a>
-              <Image src={Plus} />
+              <Image src={require('@/assets/images/svg/plus.svg')} alt='' />
               Top Up</a></li>
             <li><a>
-              <Image src={User} />
+              <Image src={require('@/assets/images/svg/user.svg')} alt='' />
               Profile</a></li>
           </ul>
           <ul className="menu">
             <li><a>
-              <Image src={Logout} />
+              <Image src={require('@/assets/images/svg/log-out.svg')} alt='' />
               Logout</a></li>
           </ul>
         </div>

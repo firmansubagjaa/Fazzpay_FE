@@ -11,10 +11,10 @@ const HeroBanner3 = () => {
           <div className="grid mx-auto grid-cols-1 lg:grid-cols-2 ">
             <div className="mx-auto">
               <div>
-                <Image src={Phone2} alt="phone" className="z-10" data-aos="fade-down" data-aos-anchor-placement="bottom-bottom" data-aos-offset="600" data-aos-duration="800" />
+                <Image src={require('@/assets/images/svg/phone2.svg')} alt="phone" className="z-10" data-aos="fade-down" data-aos-anchor-placement="bottom-bottom" data-aos-offset="600" data-aos-duration="800" />
               </div>
               <div>
-                <Image src={Phone1} alt="phone" className="" data-aos="fade-up" data-aos-offset="900" data-aos-duration="800" />
+                <Image src={require('@/assets/images/svg/phone1.svg')} alt="phone" className="" data-aos="fade-up" data-aos-offset="900" data-aos-duration="800" />
               </div>
             </div>
             <div className="py-36">

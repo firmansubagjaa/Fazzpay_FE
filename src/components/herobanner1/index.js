@@ -1,5 +1,4 @@
 
-import Phone from "../../assets/images/svg/phone.svg";
 import Image from "next/image";
 
 const HeroBanner1 = () => {
@@ -10,7 +9,7 @@ const HeroBanner1 = () => {
           <div className="hero-content flex-col text-center lg:flex-row-reverse lg:text-left">
             <div data-aos="fade-up" data-aos-duration="1400">
               <div>
-                <Image src={Phone} className="w-screen lg:max-w-lg rounded-lg" alt='phone' width={700}
+                <Image src={require('@/assets/images/svg/phone.svg')} className="w-screen lg:max-w-lg rounded-lg" alt='phone' width={700}
                   height={700} />
               </div>
             </div>

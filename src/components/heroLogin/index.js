@@ -1,4 +1,3 @@
-import Phone3 from "../../assets/images/svg/phone3.svg";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -15,7 +14,7 @@ const HeroLogin = () => {
 
           </div>
 
-          <Image src={Phone3} alt="" />
+          <Image src={require('@/assets/images/svg/phone3.svg')} alt="" />
           <div>
             <div className="py-5">
               <h1 className="font-semibold text-2xl">App that Covering Banking Needs.</h1>

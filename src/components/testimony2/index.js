@@ -1,5 +1,4 @@
 import React from 'react'
-import User from '@/assets/images/png/users/user1.png'
 import Image from 'next/image'
 
 export default function Testimony() {
@@ -21,7 +20,7 @@ export default function Testimony() {
                 <>
                   <div className="card w-[22rem] bg-base-100 shadow-xl my-10">
                     <figure className="px-10 pt-10">
-                      <Image src={User} alt="Shoes" className="rounded-xl" width={50} height={50} />
+                      <Image src={require('@/assets/images/png/users/user1.png')} alt="Shoes" className="rounded-xl" width={50} height={50} />
                     </figure>
                     <div className="card-body items-center text-center">
                       <h2 className="card-title">Medi Fajar</h2>

@@ -4,13 +4,6 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-//import image
-import ActiveGrid from '@/assets/images/svg/activegrid.svg'
-import Transfer from '@/assets/images/svg/arrow-up.svg'
-import Plus from '@/assets/images/svg/plus.svg'
-import User from '@/assets/images/svg/user.svg'
-import Logout from '@/assets/images/svg/log-out.svg'
-
 export default function Profile() {
   return (
     <>
@@ -23,17 +16,17 @@ export default function Profile() {
             <div className="flex flex-col justify-between h-full">
               <ul className="menu bg-base-100 mb-10 w-64">
                 <li><Link href='/dashboard'>
-                  <Image src={ActiveGrid} />
+                  <Image src={require('@/assets/images/svg/activegrid.svg')} alt='' />
                   Home</Link>
                 </li>
                 <li><Link href='/dashboard/transfer'>
-                  <Image src={Transfer} />
+                  <Image src={require('@/assets/images/svg/arrow-up.svg')} alt='' />
                   Transfer</Link></li>
                 <li><Link href='/dashboard/top-up'>
-                  <Image src={Plus} />
+                  <Image src={require('@/assets/images/svg/plus.svg')} alt='' />
                   Top Up</Link></li>
                 <li className="bordered"><Link href='/dashboard/profile'>
-                  <Image src={User} />
+                  <Image src={require('@/assets/images/svg/user.svg')} alt='' />
                   Profile</Link></li>
               </ul>
               {/* <ul className="menu">
