@@ -4,7 +4,7 @@ import Image from "next/image";
 const HeroBanner1 = () => {
   return (
     <>
-      <div className="hero min-h-screen pt-52 bg-[#6379F4] bg-no-repeat bg-top bg-auto text-white -mt-36">
+      <div className="hero min-h-screen pt-52 bg-[#6379F4] bg-hero-pattern bg-no-repeat bg-top bg-auto text-white -mt-36">
         <div className="container">
           <div className="hero-content flex-col text-center lg:flex-row-reverse lg:text-left">
             <div data-aos="fade-up" data-aos-duration="1400">
