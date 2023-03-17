@@ -1,6 +1,7 @@
 "use client";
 import HeroLogin from '@/components/heroLogin'
 import axios from 'axios';
+import Cookies from 'js-cookie';
 // import { useFormik } from 'formik'
 // import login__validate from 'lib/validate'
 import Link from 'next/link'
@@ -25,14 +26,15 @@ export default function Login() {
     const data = new URLSearchParams(LoginForm)
     axios.post("https://vast-red-clam-suit.cyclic.app/api/v1/auth/login", data).then((res) => {
       console.log(res.data.data);
-      localStorage.setItem('@userLogin', JSON.stringify(res.data.data));
+      // localStorage.setItem('@userLogin', JSON.stringify(res.data.data));
+      Cookies.set('@userLogin', JSON.stringify(res.data.data), { expires: 7 })
       router.push('/dashboard')
     }).catch((err) => {
-      setValidate({ error: true })
+      setValidate({ err: true })
     })
   };
   useEffect(() => {
-    if (localStorage.getItem('@userLogin')) {
+    if (Cookies.get('@userLogin')) {
       router.push('/dashboard')
     }
   }, [router])

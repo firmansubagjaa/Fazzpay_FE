@@ -1,4 +1,5 @@
 
+import Cookies from "js-cookie";
 import Image from "next/image";
 import React from 'react'
 // import Link from "next/link";
@@ -22,7 +23,9 @@ export default function Auth() {
                     <Image src={require('@/assets/images/png/users/user1.png')} alt='' />
                   </div>
                 </label>
-                <div className="mx-2 text-sm">
+                <div className="mx-2 text-sm flex flex-col">
+                  {Cookies.get("@userLogin") ? <span>{JSON.parse(Cookies.get("@userLogin")).firstname}</span> : <span>anonim</span>}
+                  {Cookies.get("@userLogin") ? <span>{JSON.parse(Cookies.get("@userLogin")).phone}</span> : <span>anonim</span>}
                   {/* {localStorage.getItem("@userLogin") ?
                     <span>{JSON.parse(localStorage.getItem("@userLogin")).firstname} {JSON.parse(localStorage.getItem("@userLogin")).lastname}</span>
                     : <span>anonim</span>
@@ -31,8 +34,6 @@ export default function Auth() {
                     <span>{JSON.parse(localStorage.getItem("@userLogin")).phone}</span>
                     : <span> - </span>
                   } */}
-                  <span>Test</span>
-                  <span>008999999999</span>
                 </div>
               </div>
               <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">

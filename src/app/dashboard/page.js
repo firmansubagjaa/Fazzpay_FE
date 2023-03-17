@@ -10,6 +10,7 @@ import Footer2 from '@/components/footer2'
 //import
 import Link from 'next/link'
 import Image from 'next/image'
+import Cookies from 'js-cookie';
 
 export default function Home(setIsLogin) {
   const router = useRouter();
@@ -37,7 +38,7 @@ export default function Home(setIsLogin) {
               </ul>
               <ul className="menu">
                 <li><a onClick={() => {
-                  localStorage.removeItem("@userLogin");
+                  Cookies.remove("@userLogin", { path: '' });
                   router.push('/')
                 }}>
                   <Image src={require('@/assets/images/svg/log-out.svg')} alt='' />
