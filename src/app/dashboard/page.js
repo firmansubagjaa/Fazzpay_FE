@@ -20,7 +20,7 @@ export default function Home(setIsLogin) {
       <div className="container py-10">
         <div className="flex w-full">
           <div className="card flex items-start rounded-box mt-5 py-10 lg:mr-5 shadow-md">
-            <div className="flex flex-col justify-between h-full">
+            <div className="hidden lg:flex flex-col justify-between h-full">
               <ul className="menu bg-base-100 mb-10 w-64">
                 <li className='bordered'><Link href='/dashboard'>
                   <Image src={require('@/assets/images/svg/activegrid.svg')} alt='' />
@@ -47,13 +47,17 @@ export default function Home(setIsLogin) {
             </div>
           </div>
           {/* <Dashboard /> */}
-          <div className="">
+          <div className="w-full">
             <MoneyInfo />
-            <div className="flex flex-row justify-evenly">
-              <GraphPanel />
-              <Link href='/dashboard/transaction'>
-                <TransactionPanel />
-              </Link>
+            <div className="flex flex-col lg:flex-row justify-evenly">
+              <div>
+                <GraphPanel />
+              </div>
+              <div>
+                <Link href='/dashboard/transaction'>
+                  <TransactionPanel />
+                </Link>
+              </div>
             </div>
           </div>
         </div>

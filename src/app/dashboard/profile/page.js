@@ -12,7 +12,7 @@ export default function Profile() {
         <div className="flex flex-row">
           <div>
           </div>
-          <div className="card flex items-start rounded-box mt-5 py-10 lg:mr-5 shadow-md">
+          <div className="card hidden lg:flex items-start rounded-box mt-5 py-10 lg:mr-5 shadow-md">
             <div className="flex flex-col justify-between h-full">
               <ul className="menu bg-base-100 mb-10 w-64">
                 <li><Link href='/dashboard'>
