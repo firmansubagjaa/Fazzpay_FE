@@ -20,8 +20,8 @@ const MoneyInfo = () => {
               <h2 className="card-title text-4xl">Rp120.000</h2>
               <p className="font-light">+62 813-9387-7946</p>
             </div>
-            <div className="flex flex-col">
-              <button className="btn btn-[#ffffff] mb-3">Transfer</button>
+            <div className="flex flex-row lg:flex-col mt-5">
+              <button className="btn btn-[#ffffff] mb-3 mr-3 lg:mr-0">Transfer</button>
               <label htmlFor="my-modal-3" className="btn btn-[#fffff]">Top Up</label>
             </div>
           </div>
