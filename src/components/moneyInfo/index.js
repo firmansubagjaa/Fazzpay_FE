@@ -1,3 +1,4 @@
+import Cookies from "js-cookie";
 import { useState } from "react";
 
 const MoneyInfo = () => {
@@ -17,7 +18,7 @@ const MoneyInfo = () => {
           <div className="flex flex-col lg:flex-row justify-between items-center">
             <div className="leading-loose">
               <p className="font-light">Balance</p>
-              <h2 className="card-title text-4xl">Rp120.000</h2>
+              <h2 className="card-title text-4xl">Rp {Cookies.get("@userLogin") ? (JSON.parse(Cookies.get('@userLogin')).balance) : ""}</h2>
               <p className="font-light">+62 813-9387-7946</p>
             </div>
             <div className="flex flex-row lg:flex-col mt-5">

@@ -12,7 +12,7 @@ export default function Transaction() {
     <>
       <Auth />
       <div className="container py-10">
-        <div className="flex flex-row">
+        <div className="flex flex-col lg:flex-row">
           <div>
           </div>
           <div className="card flex items-start rounded-box mt-5 py-10 lg:mr-5 shadow-md">

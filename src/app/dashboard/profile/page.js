@@ -1,5 +1,6 @@
+"use client"
 import Auth from '@/components/auth'
-import ProfileComponent from '@/components/profilecomponent'
+import ProfileComponent from '@/app/dashboard/components/profileComponents'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
